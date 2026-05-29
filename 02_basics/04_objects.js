@@ -64,9 +64,8 @@ const selfUser = {
     email: "hi@gmail.com",
     isloggedIn : false
 }
-// console.log(Object.keys(selfUser));
-// console.log(Object.values(selfUser));
-// console.log(Object.entries(selfUser));
-// console.log(selfUser.hasOwnProperty('name'));
+console.log(Object.keys(selfUser));
+console.log(Object.values(selfUser));
+console.log(Object.entries(selfUser));
+console.log(selfUser.hasOwnProperty('name')); //true
 console.log(Object.hasOwn(selfUser, "name")); // true
-console.log(Object.hasOwnProperty(selfUser, "name")); // true
