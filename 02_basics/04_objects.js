@@ -64,8 +64,26 @@ const selfUser = {
     email: "hi@gmail.com",
     isloggedIn : false
 }
-console.log(Object.keys(selfUser));
-console.log(Object.values(selfUser));
-console.log(Object.entries(selfUser));
-console.log(selfUser.hasOwnProperty('name')); //true
-console.log(Object.hasOwn(selfUser, "name")); // true
+
+// console.log(Object.keys(selfUser));
+// console.log(Object.values(selfUser));
+// console.log(Object.entries(selfUser));
+// console.log(selfUser.hasOwnProperty('name')); //true
+// console.log(Object.hasOwn(selfUser, "name")); // true
+
+const course = {
+    c_name: "javascript",
+    c_price: 999,
+    c_teacher: "John",
+    c_duration: "3 month",
+    c_mode: "Offline"
+}
+
+console.log(course.c_price);  // method 1
+
+const { c_duration } = course;
+
+console.log( c_duration ); // method 2
+
+const { c_teacher: t } = course;
+console.log( t );  
