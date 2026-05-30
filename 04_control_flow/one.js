@@ -22,4 +22,15 @@
 // const balance = 1000
 // if (balance > 500) console.log('test'),
 //     console.log('test2');
-    
+// It not recommend
+
+
+const balance = 980
+
+if (balance < 500){
+    console.log('less than 500');
+} else if(balance < 750){
+    console.log('less than 750');
+} else if(balance < 1000){
+    console.log('less than 1000');
+}
