@@ -43,4 +43,33 @@ function loggedInMsg (username = "User") {   // if user passed parameter then Us
 }
 
 // console.log(loggedInMsg());
-console.log(loggedInMsg('salim'));
+// console.log(loggedInMsg('salim'));
+
+function calculateCartPrice(...price){
+    return price
+}
+
+// console.log(calculateCartPrice(200, 300, 500, 2000, 5000));
+
+function CartPrice(val1, val2, ...price){
+    return price
+}
+
+// console.log(CartPrice(200, 300, 500, 2000, 5000));
+
+
+const user = {
+    username:"salim",
+    price: 200
+}
+
+function handleObject(anyobject) {
+    console.log(`username is ${anyobject.username} and price is ${anyobject.price}`);  
+}
+
+// handleObject(user)
+
+handleObject({
+    username: "John",
+    price: 399
+})
